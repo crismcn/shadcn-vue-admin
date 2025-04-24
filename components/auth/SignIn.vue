@@ -41,9 +41,9 @@
         <FormItem v-auto-animate>
           <div class="flex items-center">
             <FormLabel>Password</FormLabel>
-            <!-- <I18nLink to="/forgot-password" class="ml-auto inline-block text-sm underline">
+            <I18nLink to="/forgot-password" class="ml-auto inline-block text-sm underline">
               Forgot your password?
-            </I18nLink> -->
+            </I18nLink>
           </div>
           <FormControl>
             <PasswordInput v-bind="componentField" />
@@ -76,9 +76,9 @@
     </form>
     <div class="mt-4 text-center text-sm text-muted-foreground">
       Don't have an account?
-      <!-- <I18nLink to="/register" class="underline">
+      <I18nLink to="/register" class="underline">
         Sign up
-      </I18nLink> -->
+      </I18nLink>
     </div>
   </div>
 </template>

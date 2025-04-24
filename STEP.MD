@@ -208,8 +208,8 @@ $ npx nuxi module add icon
 # or
 $ pnpm i -D @nuxt/icon
 
-# 将图标集合安装到本地
-$ pnpm i -D @iconify-json/collection-name
+# 将图标集合安装到本地 pnpm i -D @iconify-json/collection-name
+$ pnpm i -D @iconify-json/lucide
 ```
 
 ```ts

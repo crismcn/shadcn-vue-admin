@@ -50,14 +50,13 @@ function setClassTheme() {
     ...allColors.map(color => `theme-${color}`),
   )
   document.body.classList.add(`theme-${theme.value}`)
-  console.log(theme.value)
 }
 
 function setStyleRadius() {
   document.body.style.setProperty('--radius', `${radius.value}rem`)
 }
 
-function backgroundColor(color: Color) {
+function activeColorColor(color: Color) {
   const bg = themes.find(theme => theme.name === color)
   return `hsl(${bg?.activeColor.light})`
 }
@@ -74,7 +73,7 @@ const colorMode = useColorMode()
           <Button class="justify-start gap-2" variant="outline" :class="{ 'border-primary border-2': theme === color }"
             @click="setTheme(color)">
             <span class="h-5 w-5 flex items-center justify-center rounded-full"
-              :style="{ backgroundColor: backgroundColor(color) }">
+              :style="{ backgroundColor: activeColorColor(color) }">
               <Icon v-if="theme === color" name="i-radix-icons-check" size="16" class="text-white" />
             </span>
             <span class="text-xs capitalize">{{ color }}</span>

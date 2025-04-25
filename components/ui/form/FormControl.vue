@@ -8,6 +8,7 @@ const { error, formItemId, formDescriptionId, formMessageId } = useFormField()
 <template>
   <Slot
     :id="formItemId"
+    :class="{ 'text-destructive border-destructive focus-visible:ring-destructive': error }"
     :aria-describedby="!error ? `${formDescriptionId}` : `${formDescriptionId} ${formMessageId}`"
     :aria-invalid="!!error"
   >

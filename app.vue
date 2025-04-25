@@ -2,12 +2,11 @@
 import { ConfigProvider } from 'reka-ui'
 import { Toaster } from '@/components/ui/toast'
 
-const colorMode = useColorMode()
-
-const color = computed(() => colorMode.value === 'dark' ? '#09090b' : '#ffffff')
-
+const useIdFunction = () => useId()
 const { theme, radius } = useCustomize()
 
+const colorMode = useColorMode()
+const color = computed(() => colorMode.value === 'dark' ? '#09090b' : '#ffffff')
 
 useHead({
   meta: [
@@ -26,9 +25,6 @@ useHead({
     style: computed(() => `--radius: ${radius.value}rem;`),
   },
 })
-
-const useIdFunction = () => useId()
-
 </script>
 
 <template>

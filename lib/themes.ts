@@ -631,6 +631,14 @@ export const themes = [
       },
     },
   },
+  {
+    name: 'xxx',
+    label: 'Xxx',
+    activeColor: {
+      light: '340 100% 60%',
+      dark: '340 100% 70%',
+    },
+  },
 ] as const
 
 export type Theme = (typeof themes)[number]

@@ -57,6 +57,9 @@ importers:
       '@iconify-json/lucide':
         specifier: ^1.2.38
         version: 1.2.38
+      '@internationalized/date':
+        specifier: ^3.8.0
+        version: 3.8.0
       '@nuxt/icon':
         specifier: 1.12.0
         version: 1.12.0(magicast@0.3.5)(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))
@@ -72,6 +75,9 @@ importers:
       '@vee-validate/zod':
         specifier: ^4.15.0
         version: 4.15.0(vue@3.5.13(typescript@5.8.3))(zod@3.24.3)
+      '@vueuse/math':
+        specifier: ^13.1.0
+        version: 13.1.0(vue@3.5.13(typescript@5.8.3))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -1615,6 +1621,11 @@ packages:
 
   '@vueuse/core@13.1.0':
     resolution: {integrity: sha512-PAauvdRXZvTWXtGLg8cPUFjiZEddTqmogdwYpnn60t08AA5a8Q4hZokBnpTOnVNqySlFlTcRYIC8OqreV4hv3Q==}
+    peerDependencies:
+      vue: ^3.5.0
+
+  '@vueuse/math@13.1.0':
+    resolution: {integrity: sha512-iTpUKYUWhZHzc6RTbkEkpA9L/CJBtIY7nwN0Lc6JkX3KOFTRU1vmN9odX9ZTNnndlE51HS5d68VvUBh1v5n84A==}
     peerDependencies:
       vue: ^3.5.0
 
@@ -6928,6 +6939,11 @@ snapshots:
     dependencies:
       '@types/web-bluetooth': 0.0.21
       '@vueuse/metadata': 13.1.0
+      '@vueuse/shared': 13.1.0(vue@3.5.13(typescript@5.8.3))
+      vue: 3.5.13(typescript@5.8.3)
+
+  '@vueuse/math@13.1.0(vue@3.5.13(typescript@5.8.3))':
+    dependencies:
       '@vueuse/shared': 13.1.0(vue@3.5.13(typescript@5.8.3))
       vue: 3.5.13(typescript@5.8.3)
 

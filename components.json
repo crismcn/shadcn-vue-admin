@@ -4,8 +4,8 @@
   "typescript": true,
   "tailwind": {
     "config": "tailwind.config.ts",
-    "css": "assets/index.css",
-    "baseColor": "zinc",
+    "css": "src/assets/index.css",
+    "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""
   },

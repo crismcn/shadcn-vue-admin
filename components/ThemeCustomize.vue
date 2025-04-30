@@ -3,10 +3,10 @@ import { themes } from '@/lib/themes'
 
 const { theme, radius, setTheme, setRadius } = useCustomize()
 
-type Color = 'zinc' | 'slate' | 'stone' | 'gray' | 'neutral' | 'red' | 'rose' | 'orange' | 'green' | 'blue' | 'yellow' | 'violet' | 'xxx'
+type Color = 'zinc' | 'slate' | 'stone' | 'gray' | 'neutral' | 'red' | 'rose' | 'orange' | 'green' | 'blue' | 'yellow' | 'violet' | 'xxx' | 'yyy' | 'bold-clarity'
 
 // Create an array of color values
-const allColors: Color[] = ['zinc', 'rose', 'blue', 'green', 'orange', 'red', 'slate', 'stone', 'gray', 'neutral', 'yellow', 'violet', 'xxx']
+const allColors: Color[] = ['zinc', 'rose', 'blue', 'green', 'orange', 'red', 'slate', 'stone', 'gray', 'neutral', 'yellow', 'violet', 'xxx', 'yyy', 'bold-clarity']
 
 const RADII = [0, 0.25, 0.5, 0.75, 1]
 

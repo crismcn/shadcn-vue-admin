@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@unocss/nuxt', 'shadcn-nuxt', '@nuxtjs/color-mode', '@vueuse/nuxt', '@pinia/nuxt', '@nuxt/icon', 'nuxt-i18n-micro'],
-  css: ['@unocss/reset/tailwind.css', '@/assets/css/theme.css'],
+  css: ['@unocss/reset/tailwind.css', '@/assets/css/theme.css', 'echo-editor/style.css'],
   colorMode: {
     classSuffix: '', // 不写上该配置切换暗黑模式不生效 @nuxtjs/color-mode
   },

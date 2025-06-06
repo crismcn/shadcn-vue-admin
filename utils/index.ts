@@ -1,3 +1,5 @@
+import type { Updater } from '@tanstack/vue-table'
+
 export function joinValues<T>(array: T[], separator = ' | '): string {
   return array.map((val) => (typeof val === 'string' ? `'${val}'` : val)).join(separator)
 }
@@ -51,4 +53,8 @@ export function getKeyAndValues(
   }
 
   return { key: defaultKey, values: {} }
+}
+
+export function valueUpdater<T extends Updater<any>>(updaterOrValue: T, ref: Ref) {
+  ref.value = typeof updaterOrValue === 'function' ? updaterOrValue(ref.value) : updaterOrValue
 }

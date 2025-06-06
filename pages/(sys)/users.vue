@@ -6,5 +6,10 @@
         <p class="text-muted-foreground">Here&apos;s a list of your tasks for this month!</p>
       </div>
     </div>
+    <DataTable />
   </div>
 </template>
+
+<script setup lang="ts">
+import DataTable from '~/components/users/DataTable.vue';
+</script>
